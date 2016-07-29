@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ScanActivity">
+
+    <TableLayout android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="申请人"
+            android:layout_column="0"
+            android:gravity="end"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="tester"
+            android:id="@+id/scan_request_id"
+            android:layout_column="1"
+            android:padding="10dp" />
+    </TableRow>
+    </TableLayout>
+    <com.journeyapps.barcodescanner.CompoundBarcodeView
+        android:id="@+id/barcode_scanner"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+    </com.journeyapps.barcodescanner.CompoundBarcodeView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="4">
+        <TableLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:padding="10dp"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="日期"
+                    android:id="@+id/textView6"
+                    android:layout_column="0" />
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="2016-04-11"
+                    android:id="@+id/scan_request_date"
+                    android:layout_column="1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:padding="10dp"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="时间"
+                    android:id="@+id/textView7"
+                    android:layout_column="0" />
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="8:50 AM"
+                    android:id="@+id/scan_request_time"
+                    android:layout_column="1" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:padding="10dp"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="位置"
+                    android:layout_column="0" />
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="80dp"
+                    android:layout_weight="7"
+                    android:gravity="top"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=""
+                    android:id="@+id/scan_request_location"
+                    android:layout_column="1" />
+
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

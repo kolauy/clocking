@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.genisky.clocking.SettingActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#DDDDDD"
+        android:layout_height="20dp"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#AAAAAA"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="个人信息" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="姓名" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:id="@+id/setting_name"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="tester" />
+
+    </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="头像" />
+            <ImageView
+                android:layout_width="80dp"
+                android:src="@drawable/people"
+                android:id="@+id/setting_image"
+                android:layout_height="80dp"
+                android:gravity="end|center_vertical"
+                android:text="tester" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="注册电话" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:id="@+id/setting_phone"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="18888888888" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="部门" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:id="@+id/setting_department"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="市场部" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="企业" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:id="@+id/setting_company"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="北京亿中景科技发展有限公司" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#DDDDDD"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        />
+
+    <TableLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AAAAAA"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="系统设置" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="接收消息通知"
+            android:id="@+id/switch1" />
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="打卡提醒"
+            android:id="@+id/switch3" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="打卡提醒时间" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="8:50 AM" />
+
+        </TableRow>
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="振动"
+            android:id="@+id/switch2" />
+
+
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#DDDDDD"
+        android:layout_height="20dp"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AAAAAA"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="关于clocking" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="检查新版本" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0.2.1.1" />
+
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#DDDDDD"
+        android:layout_height="20dp"
+        />
+
+    <TextView
+        android:background="#DDDDDD"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TextView
+        android:background="#DDDDDD"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:text="Genisky.com 版权所有"
+        />
+    <TextView
+        android:background="#DDDDDD"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
